@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.freepik.com/premium-vector/weather-widget-icon-graphic-design_607286-11322.jpg?semt=ais_hybrid&w=740"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <header>
+      <nav class="m-0 p-5 bg-green-50 flex w-full item-center">
+        <h1 class="text-4xl font-bold">
+          Weather <span class="text-blue-500">APP</span>
+        </h1>
+        <ul
+          class="flex justify-between gap-24 mt-2 ml-56 font-semibold cursor-pointer item-center"
+        >
+          <li class="cursor-pointer hover:text-purple-600">Home</li>
+          <li class="cursor-pointer hover:text-purple-600">Forcast</li>
+          <li class="cursor-pointer hover:text-purple-600">About Us</li>
+          <li class="cursor-pointer hover:text-purple-600">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex justify-center item-center container ">
+      <div class="h-[40vh] w-[70vw] mt-48 border-2 p-28 border-black rounded-xl bg-blue-50">
+        <form id="form" class="flex-col flex space-y-4">
+          <input
+            type="text"
+            
+            name="data"
+            placeholder="Enter your city"
+            id="data"
+            class="border rounded-lg h-10 w-64 p-2"
+          />
+          <button
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            Submit
+          </button>
+        </form>
+        <div class="flex justify-between w-full mt-10">
+          <div  class="flex-col flex space-y-2 font-semibold text-blue-700">
+            <img
+              class="h-10 w-10"
+              src="https://cdn-icons-png.flaticon.com/512/3741/3741046.png"
+              alt="speed"
+            />
+            <p id="speed" class="flex justify-center" >23</p>
+
+          </div>
+          <div class="flex-col flex space-y-2 font-semibold text-blue-700">
+            <img
+              class="h-10 w-10"
+              src="https://cdn-icons-png.flaticon.com/512/107/107818.png"
+              alt="temp"
+            />
+            <p id="temp" class="flex justify-center">12</p>
+          </div>
+          <div  class="flex-col flex space-y-2 font-semibold text-blue-700">
+            <img
+              class="h-10 w-10"
+              src="https://cdn-icons-png.flaticon.com/512/728/728093.png"
+              alt="humidity"
+            />
+            <p id="humidity" class="flex justify-center">23</p>
+          </div>
+          <div  class="flex-col flex space-y-2 font-semibold text-blue-700">
+            <img
+              class="h-10 w-10"
+              src="https://emergency.ufl.edu/wp-content/uploads/2021/08/gatorsafe_icon_web_EXTREMEHEAT.png"
+              alt="feels like"
+            />
+            <p id="feels" class="flex justify-center">67</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
